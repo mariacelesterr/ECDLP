@@ -1,0 +1,26 @@
+<template name="lay_process">
+	<layprocess>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="description" content="Movie Store">
+			<meta name="keywords" content="Movies, Series, Store, Shop, Entertainment">
+			<title>El Club De La Película</title>
+		</head>
+
+		<body>
+		<div id="container">
+			{{>header}}
+			<div id="body">
+				<div id="inner">
+					{{>yield}}
+				</div>
+			</div>
+		</div> 
+		{{>footer}}
+		
+		
+
+		</body>
+	</layprocess>
+</template>
+

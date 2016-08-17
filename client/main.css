@@ -1,0 +1,330 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: tahoma, helvetica, arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	background: url(images/page_bg.gif);
+	min-height:100%;
+	height: 100%;
+	position:relative;        
+}
+
+html, body, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height:100% !important;
+}
+
+th, td {
+	font-size: 100%;
+}
+
+img { border: 0; }
+
+h1, h2, h3 {
+	font-size: 100%;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0 0 0.5em 0;
+	padding: 0;
+}
+
+h3 {
+	padding: 0.4em 0 0 0;
+}
+
+#container {
+	height: auto;
+	min-height: 100%;
+}
+
+.block {
+	display: block;
+}
+
+.clear {
+	clear: both;
+	height: 0.2em;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0.3em;
+	font-size: 1px;
+}
+
+.left {
+	float: left;
+	margin: 0.1em 0.8em 0 0;
+}
+
+.softright {
+	text-align: right;
+}
+
+.readmore {
+	text-align: right;
+}
+
+/* ***** */
+
+#header {
+	background: #555 repeat-x;
+	min-height: 4em;
+	height: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	/*padding: 1.6em 0 0.8em 0;*/
+	vertical-align: middle;
+	line-height: 4em;
+	/*border-bottom: 1px solid #555;*/
+	box-shadow: 0px 0px 8px rgba(101,101,101,31);
+}
+
+#header img {
+	display: block;
+
+}
+
+#nav, #logo {
+	font-weight: bold;
+}
+
+#logo{
+	width: 16em;
+	margin: 0 2em 0 2em;
+	text-align: center;
+	background-color: #E44;
+	color: white;
+	text-shadow: 1px 1px 0px #555;
+	transition: background-color 0.05s, text-shadow 0.2s, color 0.075s;
+}
+
+#logo:hover{
+	background-color: white;
+	color: #555;
+	text-shadow: 1px 1px 0px #E44;
+}
+
+#header a , #header a:visited{
+	text-decoration: none;
+}
+
+layprocess #header {
+	text-align: center;
+}
+
+laymain #logo {
+	float:left;
+}
+
+#nav {
+	float:right;
+	text-align: right;
+	padding-right: 5em; 
+}
+
+#nav, #nav a {
+	color: white;
+	text-decoration: none;
+	transition: text-shadow 0.5s;
+}
+
+#nav a:hover {
+	text-shadow: 1px 1px 0px #E44;
+}
+
+#title {
+	width: 100%;
+	text-align: -moz-center !important;
+
+}
+
+#title #inner p {
+	text-align: center;
+	color: #333;
+	font-size: 2.5em;
+	/*line-height: 1.5em;*/
+	width: 14em;
+	min-height: 2em;	
+	margin: 2.8em 0 1.2em 0;
+	font-weight: bolder;
+	border: #333 solid 4px;
+	padding: 0.5em 0em 0.5em 0em;
+	-ms-transform: rotate(7deg); /* IE 9 */
+	-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+	transform: rotate(7deg);
+}
+
+#line {
+	left: 0;
+	right: 0;
+	/*background-color: #191;
+	height: 1px;*/
+	border-bottom: 1px solid #555;
+	margin: 2px 4em 2px 4em
+}
+
+#browse {
+	margin-top: 2em;
+	float: left;
+	text-align: left;
+	width: 22%;
+	height: 100%;
+
+	position: -webkit-sticky;
+	position: sticky;
+	top: 6em;
+	left: 0;
+	
+	/*box-shadow: 5px 10px 15px 5px rgba(0,0,0,.1);*/
+}
+
+#browse dl {
+	padding-left: 5%;
+	border-right: 0.2em solid #333;
+}
+
+#browse dt {
+	color: #E44;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 0.4em;
+	padding-left: 10%;	
+	padding-bottom: 0.8em;
+	vertical-align: middle;
+	width: auto;
+}
+
+#browse dd {
+	/*border-bottom: 0.2em solid #AAA;*/
+	color: #555;
+	padding-top: 1em;
+	padding-left: 10%;
+	padding-bottom: 1em;
+	vertical-align: middle;
+	margin-left: 0;
+	transition: background-color 0.12s, color 0.08s, padding-left 0.2s;
+	width: auto;
+}
+
+#browse dd:hover {
+	/*border-bottom: 0.2em solid #E44;*/
+	padding-left: 15%;
+	background-color: #333;
+	color: #EEE;
+}
+
+
+#browse a {
+	color: inherit;
+	display: block;
+	text-decoration: none;
+}
+
+
+
+#browse .searchform {
+	padding: 1em;
+}
+
+
+#browse form {
+	margin: 0;
+	padding: 0;
+}
+
+#browse form div {
+	padding-bottom: 1em;
+	width: 15em; 
+}
+
+
+#body {
+	float: right;
+	width: 78%;
+	position: relative;
+	text-align: left;
+}
+
+layprocess #body {
+	float: unset;
+	width: 100%;
+	padding-top: 3em;
+	vertical-align: middle;
+}
+
+#body #inner {
+	padding: 2em 3em 5em 3em;
+	margin: 2px 1px 0 0;
+	/*border: 1px solid #e5e5e5;*/
+}
+
+#body p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+#body .br {
+	border-bottom: 1px solid #EEE;
+}
+
+#body .readmore {
+	margin-top: -0.5em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#body .readmore a {
+	color: #ad1c1c;
+}
+
+#body .readmore a:hover {
+	color: #E44;
+}
+
+#body h3 {
+
+	text-align: center;
+	font-family: "Keble Condensed", "KebleCondensed", "arial narrow", helvetica, arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #555;
+	padding: 0 0 0 18px;
+	margin: 1px 0 3px 0;
+}
+
+#footer {
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 2em;
+	padding: 1em 0 1em 0;
+	margin-top: -4em;
+   background:#E44;
+}
+
+#footer, #footer a {
+	color: white;
+	text-decoration: none;
+}
+
+#footnav {
+	position: relative;
+	text-align: right;
+	right: 10px;
+	top: 0px;
+	padding: 8px 0 5px 0;
+}

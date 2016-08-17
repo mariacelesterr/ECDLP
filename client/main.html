@@ -1,0 +1,80 @@
+<template name="lay_main">
+	<laymain>
+	
+		<head>
+			<meta charset="UTF-8">
+			<meta name="description" content="Movie Store">
+			<meta name="keywords" content="Movies, Series, Store, Shop, Entertainment">
+			<title>El Club De La Película</title>
+		</head>
+
+		<body>
+		<div id="container">
+			{{>header nav=true}}
+			{{>title}}
+			{{>browse}}
+			<div id="body">
+				<div id="inner">
+					{{>yield}}
+				</div>
+			</div>
+		</div>
+		{{>footer}}
+		
+		</body>
+	
+	</laymain>
+</template>
+
+<template name="header">
+	<div id="header">
+		<a href="/">
+			<div id="logo">
+				EL CLUB DE LA PELÍCULA				
+			</div>
+		</a>
+		{{#if nav}}
+			<div id="nav">
+				{{>nav}}
+			</div>
+		{{/if}}
+	</div>
+</template>
+
+<template name="nav">
+
+	{{#each menucontent}}
+		<a href="/{{url}}">{{title}}</a>
+		{{#if isNotLast this}}
+			|
+		{{/if}}
+	{{/each}}
+
+</template>
+
+<template name="browse">
+	<div id="browse">
+		<dl>
+			<dt>MENÚ</dt>
+			{{#each menucontent}}
+			<a href="/{{url}}"><dd> {{title}}</dd></a>
+			{{/each}}
+		</dl>
+	</div>
+</template>
+
+<template name="footer">
+	<div id="footer"> 
+		<p>El Club de La Película, todos los derechos reservados</p>
+	</div>
+</template>
+
+
+
+<template name="title">
+	<div id="title">
+	<div id="inner"><p>CADA PELÍCULA DURA<br/>LO QUE TIENE QUE DURAR</p></div>		
+	</div>
+	<div id="line">
+	</div>
+</template>
