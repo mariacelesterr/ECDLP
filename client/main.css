@@ -1,23 +1,14 @@
-* {
-	margin: 0;
-}
-
 body {
 	font-family: tahoma, helvetica, arial, sans-serif;
-	font-size: 12px;
+	font-size: 90%;
 	text-align: center;
-	background: url(images/page_bg.gif);
 	min-height:100%;
-	height: 100%;
 	position:relative;        
 }
 
-html, body, h1 {
+html, body{
 	margin: 0;
 	padding: 0;
-}
-
-html, body {
 	height:100% !important;
 }
 
@@ -27,21 +18,20 @@ th, td {
 
 img { border: 0; }
 
-h1, h2, h3 {
-	font-size: 100%;
-}
-
 h1 {
+	font-size: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 h2 {
+	font-size: 100%;
 	margin: 0 0 0.5em 0;
 	padding: 0;
 }
 
 h3 {
+	font-size: 100%;
 	padding: 0.4em 0 0 0;
 }
 
@@ -80,6 +70,8 @@ h3 {
 
 #header {
 	background: #555 repeat-x;
+	vertical-align: middle;
+	line-height: 4em;
 	min-height: 4em;
 	height: auto;
 	position: fixed;
@@ -87,10 +79,9 @@ h3 {
 	width: 100%;
 	z-index: 9999;
 	/*padding: 1.6em 0 0.8em 0;*/
-	vertical-align: middle;
-	line-height: 4em;
 	/*border-bottom: 1px solid #555;*/
-	box-shadow: 0px 0px 8px rgba(101,101,101,31);
+	box-shadow: 0px 0px 6pt rgba(101,101,101,31);
+	transition: height 1s;
 }
 
 #header img {
@@ -108,22 +99,22 @@ h3 {
 	text-align: center;
 	background-color: #E44;
 	color: white;
-	text-shadow: 1px 1px 0px #555;
+	text-shadow: 1pt 1pt 0px #555;
 	transition: background-color 0.05s, text-shadow 0.2s, color 0.075s;
 }
 
 #logo:hover{
 	background-color: white;
 	color: #555;
-	text-shadow: 1px 1px 0px #E44;
+	text-shadow: 1pt 1pt 0px #E44;
 }
 
 #header a , #header a:visited{
 	text-decoration: none;
 }
 
-layprocess #header {
-	text-align: center;
+layprocess #logo {
+	margin: auto;
 }
 
 laymain #logo {
@@ -133,7 +124,7 @@ laymain #logo {
 #nav {
 	float:right;
 	text-align: right;
-	padding-right: 5em; 
+	padding-right: 5%; 
 }
 
 #nav, #nav a {
@@ -143,26 +134,27 @@ laymain #logo {
 }
 
 #nav a:hover {
-	text-shadow: 1px 1px 0px #E44;
+	text-shadow: 1pt 1pt 0px #E44;
 }
 
 #title {
 	width: 100%;
-	text-align: -moz-center !important;
-
 }
 
-#title #inner p {
+#title div {
 	text-align: center;
+	vertical-align: middle;
+	line-height: 2.5em;
 	color: #333;
 	font-size: 2.5em;
 	/*line-height: 1.5em;*/
 	width: 14em;
-	min-height: 2em;	
-	margin: 2.8em 0 1.2em 0;
+	max-height: 5em;	
+	margin: auto;
 	font-weight: bolder;
-	border: #333 solid 4px;
-	padding: 0.5em 0em 0.5em 0em;
+	border: #333 solid 0.2em;
+	margin-top: 3em;
+	margin-bottom: 1.2em;
 	-ms-transform: rotate(7deg); /* IE 9 */
 	-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
 	transform: rotate(7deg);
@@ -174,7 +166,7 @@ laymain #logo {
 	/*background-color: #191;
 	height: 1px;*/
 	border-bottom: 1px solid #555;
-	margin: 2px 4em 2px 4em
+	margin: 0 4em 0 4em
 }
 
 #browse {
@@ -183,7 +175,6 @@ laymain #logo {
 	text-align: left;
 	width: 22%;
 	height: 100%;
-
 	position: -webkit-sticky;
 	position: sticky;
 	top: 6em;
@@ -260,14 +251,14 @@ laymain #logo {
 }
 
 layprocess #body {
-	float: unset;
+	float: none;
 	width: 100%;
 	padding-top: 3em;
 	vertical-align: middle;
 }
 
 #body #inner {
-	padding: 2em 3em 5em 3em;
+	padding: 2em 2% 5em 2%;
 	margin: 2px 1px 0 0;
 	/*border: 1px solid #e5e5e5;*/
 }
@@ -295,11 +286,10 @@ layprocess #body {
 	color: #E44;
 }
 
-#body h3 {
-
+h3 {
 	text-align: center;
 	font-family: "Keble Condensed", "KebleCondensed", "arial narrow", helvetica, arial, sans-serif;
-	font-size: 15px;
+	font-size: 120%;
 	font-weight: normal;
 	color: #555;
 	padding: 0 0 0 18px;
@@ -310,10 +300,13 @@ layprocess #body {
 	clear: both;
 	position: relative;
 	z-index: 10;
-	height: 2em;
-	padding: 1em 0 1em 0;
+	
+	height: 4em;
+	line-height: 4em;
+	vertical-align: middle;
+	
 	margin-top: -4em;
-   background:#E44;
+    background:#E44;
 }
 
 #footer, #footer a {
@@ -327,4 +320,66 @@ layprocess #body {
 	right: 10px;
 	top: 0px;
 	padding: 8px 0 5px 0;
+}
+
+@media (max-width:600px)  {
+	
+	body {
+		font-size: 85%;
+	}
+}
+
+@media (max-width:600px), (min-resolution: 100dpi) {
+	
+	#header {
+		position: static;
+		height: auto;
+	}
+	
+	#title div {
+		font-size: 150%;
+		margin-bottom: 2em;
+	}
+	
+	#logo {
+		width: 15%;
+		min-width: 5em;
+	}
+	
+	#logo span{
+		display: none;
+	}
+	
+	#logo:before {
+		content: "ECDLP";
+	}
+}
+
+@media (max-width:450px) {
+	
+	body {
+		font-size: 75%;
+	}
+
+	#browse{
+		width: 35%;
+	}
+	
+	#body{
+		width: 65%;
+	}
+}
+
+@media (min-resolution: 97dpi) {
+	body {
+		font-size: 150%;
+	}
+	
+	#browse{
+		width: 30%;
+	}
+	
+	#body{
+		width: 70%;
+	}
 }
