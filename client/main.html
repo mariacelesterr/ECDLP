@@ -2,10 +2,10 @@
 	<laymain>
 	
 		<head>
+			<title>El Club De La Película</title>
 			<meta charset="UTF-8">
 			<meta name="description" content="Movie Store">
 			<meta name="keywords" content="Movies, Series, Store, Shop, Entertainment">
-			<title>El Club De La Película</title>
 		</head>
 
 		<body>
@@ -42,14 +42,12 @@
 </template>
 
 <template name="nav">
-
-	{{#each menucontent}}
-		<a href="/{{url}}">{{title}}</a>
-		{{#if isNotLast this}}
-			|
-		{{/if}}
+	{{#each navcontent}}
+	<a href="/{{url}}">{{title}}</a>
+	{{#if isNotLast this}}
+		|
+	{{/if}}
 	{{/each}}
-
 </template>
 
 <template name="browse">

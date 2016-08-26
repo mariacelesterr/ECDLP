@@ -35,6 +35,29 @@ h3 {
 	padding: 0.4em 0 0 0;
 }
 
+input[type="text"],input[type="password"] {
+	color: #222;
+	width: 263px;
+	line-height: 1.3;
+	font-size: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	height: 18px;
+	border: 1px solid #e4e6e8;
+	border-radius: 2px;
+	cursor: auto !important;
+}
+
+input[type="submit"] {
+	line-height: 1.3;
+	font-size: 100%;
+	margin-bottom: 10px;
+	height: 32px;
+	border: 1px solid #e4e6e8;
+	border-radius: 2px;
+	cursor: auto !important;
+}
+
 #container {
 	height: auto;
 	min-height: 100%;
